@@ -4,6 +4,8 @@ import './App.css';
 function App() {
   useEffect(() => {
     // Define the onTelegramAuth function globally so the widget can call it
+
+    //@ts-ignore
     window.onTelegramAuth = (user) => {
       alert(
         `Logged in as ${user.first_name} ${user.last_name} (${user.id}${
